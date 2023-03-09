@@ -19,7 +19,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 16em;
+    gap: 12em;
     align-items: center;
     height: 4em;
 }
