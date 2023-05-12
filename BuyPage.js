@@ -1,12 +1,15 @@
+//   FETCH API
 
-  fetch('https://apartment-booking.onrender.com/api/getAllHotel').then(data=>{
+fetch("https://apartment-booking.onrender.com/api/getAllHotel")
+  .then((data) => {
     // console.log(data)
-    return data.json(); 
-}).then(completedata =>{
+    return data.json();
+  })
+  .then((completedata) => {
     console.log(completedata);
     let data1 = "";
-    completedata.data.map((values)=>{
-    data1 += ` <div class="PopularRow">
+    completedata.data.map((values) => {
+      data1 += ` <div class="PopularRow">
     <img class="PopularImg" src="/images/luxury-bedroom-hotel.jpg" alt="">
 <div class="imgDetals">
     <p><b>${values.hotelName}</b></p>
@@ -19,8 +22,8 @@
     <i class="fa fa-restroom"><span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> 5 Toilets</span></i>  
    </div>
 </div>  
-</div>`
+</div>`;
     });
-    
-    document.querySelector(".RowFlex").innerHTML = data1
-})
+
+    document.querySelector(".RowFlex").innerHTML = data1;
+  });
