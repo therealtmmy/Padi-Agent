@@ -73,7 +73,7 @@ button {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    gap: 26em;
+    gap: 15em;
 }
 
 .searchInput {
@@ -108,16 +108,14 @@ input {
 }
 
 .Location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5.5em;
-    height: 1.3em;
-    border-radius: 7px;
-    word-spacing: 10px;
+    border-radius: 4px;
     font-size: 15px;
     padding: 4px;
-    border: 1px solid black;
+    outline: none;
+}
+
+option {
+    line-height: 40px;
 }
 
 /* Loader */
@@ -201,7 +199,7 @@ line-height: 30px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 18em;
+    gap: 25em;
     margin-top: 40px;
     margin-bottom: 40px;
 }
