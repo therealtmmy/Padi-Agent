@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
@@ -28,7 +31,7 @@ a:hover {
     display: flex;
     gap: 40px;
     font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 .logo {
@@ -46,6 +49,7 @@ a:hover {
     margin-left: 10px;
     cursor: pointer;
     color: white;
+    font-family: 'Heebo', sans-serif;
 }
 
 .SignInBtn:hover{
@@ -62,7 +66,7 @@ button {
     outline: 1px solid rgb(0, 79, 157);
     font-weight: 700;
     cursor: pointer;
-   
+    font-family: 'Heebo', sans-serif;
 }
 
 
@@ -112,6 +116,7 @@ input {
     font-size: 15px;
     padding: 4px;
     outline: none;
+    font-family: 'Jost', sans-serif;
 }
 
 option {
@@ -202,11 +207,13 @@ line-height: 30px;
     gap: 25em;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-family: 'Jost', sans-serif;
 }
 
 .numbers {
     word-spacing: 30px;
     font-size: 18px;
+    font-family: 'Jost', sans-serif;
 }
 
 .Sort {
@@ -226,6 +233,7 @@ line-height: 30px;
    margin-top: 60px;
    margin-bottom: 100px;
    font-size: 18px;
+   font-family: 'Jost', sans-serif;
 }
 
 /* Footer */
@@ -239,6 +247,7 @@ line-height: 30px;
     background-color: rgb(144, 198, 253);
     padding-top: 40px;
     line-height: 30px;
+    font-family: 'Jost', sans-serif;
 }
 
 .footerMain {

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
@@ -33,7 +36,7 @@ a:hover {
     display: flex;
     gap: 40px;
     font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 .logo {
@@ -51,6 +54,7 @@ a:hover {
     margin-left: 10px;
     cursor: pointer;
     color: white;
+    font-family: 'Heebo', sans-serif;
 }
 
 .SignInBtn:hover{
@@ -67,6 +71,7 @@ button {
     outline: 1px solid rgb(0, 79, 157);
     font-weight: 700;
     cursor: pointer;
+    font-family: 'Heebo', sans-serif;
 }
 
 .home-screen {
@@ -246,6 +251,7 @@ h3 {
 
 .OfferText {
     width: 25em;
+    font-family: 'Jost', sans-serif;
 }
 
 .OfferImg {
@@ -409,6 +415,7 @@ h5 {
     font-size: 23px;
     width: 20em;
     margin-top: 15px;
+    font-family: 'Jost', sans-serif;
 }
 
 .downloadBtn {
@@ -453,6 +460,7 @@ h5 {
     background-color: rgb(144, 198, 253);
     padding-top: 40px;
     line-height: 30px;
+    font-family: 'Jost', sans-serif;
 }
 
 .footerMain {
