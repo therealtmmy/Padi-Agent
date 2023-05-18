@@ -104,6 +104,7 @@ input {
     width: 100%;
     padding: 10px;
     font-family: 'Jost', sans-serif;
+    outline: none;
 }
 
 label {

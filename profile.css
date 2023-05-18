@@ -110,6 +110,7 @@ a:hover {
 input {
     width: 95%;
     padding: 10px;
+    outline: none;
 }
 
 .Profile-Icon {
