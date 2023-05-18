@@ -39,33 +39,24 @@ a:hover {
     font-size: 10px;
 }
 
-.SignInBtn{
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background: rgb(0, 79, 157);
-    font-weight: 700;
-    margin-left: 10px;
-    cursor: pointer;
-    color: white;
+.profile-box {
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-top: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.SignInBtn:hover{
-    background: rgb(254, 255, 255);
-    border: 1px solid rgb(0, 79, 157);
-    color: rgb(0, 79, 157);
-}
-
-button {
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    outline: 1px solid rgb(0, 79, 157);
-    font-weight: 700;
-    cursor: pointer;
+.profile-box-img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
 }
 
 
