@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
@@ -28,42 +31,32 @@ a:hover {
     display: flex;
     gap: 40px;
     font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 .logo {
     font-size: 10px;
 }
 
-.SignInBtn{
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    background: rgb(0, 79, 157);
-    font-weight: 700;
-    margin-left: 10px;
-    cursor: pointer;
-    color: white;
+.profile-box {
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-top: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.SignInBtn:hover{
-    background: rgb(254, 255, 255);
-    border: 1px solid rgb(0, 79, 157);
-    color: rgb(0, 79, 157);
+.profile-box-img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
 }
-
-button {
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    outline: 1px solid rgb(0, 79, 157);
-    font-weight: 700;
-    cursor: pointer;
-}
-
 .Main {
     display: grid;
     place-content: center;
@@ -74,7 +67,7 @@ button {
     margin-bottom: 40px;
     margin-top: 10px;
     font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 .backIcon {
@@ -129,6 +122,7 @@ button {
     display: flex;
     font-weight: 700;
     font-size: 20px;
+    font-family: 'Heebo', sans-serif;
     gap: 40px;
     margin-left: -20px;
 }
@@ -142,17 +136,20 @@ button {
 
 .fullDescribe{
     margin-bottom: 14px;
+    font-family: 'Jost', sans-serif;
 }
 
 .fullDescription {
     width: 25em;
     line-height: 25px;
     margin-bottom: 25px;
+    font-family: 'Jost', sans-serif;
 }
 
 li {
      margin-left: 20px;
      margin-top: 10px;
+     font-family: 'Jost', sans-serif;
 }
 
 .agentInform {
@@ -196,6 +193,7 @@ textarea {
     border-radius: 5px;
     margin-top: 10px;
     padding: 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 /* Similar Property */
@@ -239,6 +237,7 @@ line-height: 25px;
     justify-content: space-between;
     font-size: 14px;
     padding-top: 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 .date {
@@ -260,6 +259,7 @@ line-height: 25px;
     background-color: rgb(144, 198, 253);
     padding-top: 40px;
     line-height: 30px;
+    font-family: 'Jost', sans-serif;
 }
 
 .footerMain {
