@@ -36,7 +36,7 @@ const property = [
   },
 ];
 
-let count = 0;
+let count = 1;
 button.addEventListener("click", (event) => {
   event.preventDefault();
   let randomArray = Math.floor(Math.random() * property.length);
