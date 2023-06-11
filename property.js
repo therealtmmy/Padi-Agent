@@ -2,9 +2,6 @@ let image = document.querySelector(".slider");
 let button = document.getElementById("sliderIcon");
 let buttonOne = document.getElementById("sliderIconOne");
 let whole = document.getElementById("one");
-let propertyNumbers = document.getElementById("number");
-const returnButton = document.querySelector(".backIcon");
-let result = document.getElementById("sample");
 
 const property = [
   {
@@ -51,24 +48,10 @@ buttonOne.addEventListener("click", (event) => {
   event.preventDefault();
   let randomArray = Math.floor(Math.random() * property.length);
   whole.src = property[randomArray].url;
-  count = count + 1;
-  propertyNumbers.innerText = count;
-  if (count > 6) {
-    return (count = 6);
-  }
 });
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
   let randomArray = Math.floor(Math.random() * property.length);
   whole.src = property[randomArray].url;
-  count = count - 1;
-  propertyNumbers.innerText = count;
-  if (count === 0) return;
 });
-
-// returnButton.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   // window.open("./agents.html", "mozillaWindow", "popup");
-//   window.location.replace("./agents.html");
-// });
