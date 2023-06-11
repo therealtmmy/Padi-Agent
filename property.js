@@ -3,6 +3,8 @@ let button = document.getElementById("sliderIcon");
 let buttonOne = document.getElementById("sliderIconOne");
 let whole = document.getElementById("one");
 let propertyNumbers = document.getElementById("number");
+const returnButton = document.querySelector(".backIcon");
+let result = document.getElementById("sample");
 
 const property = [
   {
@@ -34,19 +36,16 @@ const property = [
     url:
       "https://img.freepik.com/free-photo/bangkok-city-skyline_74190-7280.jpg?w=900&t=st=1686315249~exp=1686315849~hmac=108826f549b3613bb7b428e3a441e88e1b0f5421ce7c05598744e05f1731a660",
   },
+
+  {
+    name: "Adjustable Pawm",
+    url:
+      "http://127.0.0.1:5501/images/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg",
+  },
 ];
 
 let count = 1;
-button.addEventListener("click", (event) => {
-  event.preventDefault();
-  let randomArray = Math.floor(Math.random() * property.length);
-  whole.src = property[randomArray].url;
-  count = count + 1;
-  propertyNumbers.innerText = count;
-  if (count > 6) {
-    return (count = 6);
-  }
-});
+let secondCount = 1;
 
 buttonOne.addEventListener("click", (event) => {
   event.preventDefault();
@@ -58,3 +57,18 @@ buttonOne.addEventListener("click", (event) => {
     return (count = 6);
   }
 });
+
+button.addEventListener("click", (event) => {
+  event.preventDefault();
+  let randomArray = Math.floor(Math.random() * property.length);
+  whole.src = property[randomArray].url;
+  count = count - 1;
+  propertyNumbers.innerText = count;
+  if (count === 0) return;
+});
+
+// returnButton.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   // window.open("./agents.html", "mozillaWindow", "popup");
+//   window.location.replace("./agents.html");
+// });
