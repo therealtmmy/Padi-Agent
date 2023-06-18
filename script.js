@@ -1,10 +1,9 @@
-var navbar = document.querySelector('#nav')
+var navbar = document.querySelector("#nav");
 
 window.onscroll = function() {
-
   if (window.pageYOffset > 200) {
-    navbar.classList.add('scrolled')
+    navbar.classList.add("scrolled");
   } else {
-    navbar.classList.remove('scrolled')
+    navbar.classList.remove("scrolled");
   }
-}
+};
