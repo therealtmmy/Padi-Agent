@@ -1,15 +1,16 @@
-//   FETCH API
+let rotate = document.getElementById("spinner");
 
-fetch("https://apartment-booking.onrender.com/api/getAllHotel")
-  .then((data) => {
-    // console.log(data)
-    return data.json();
-  })
-  .then((completedata) => {
-    console.log(completedata);
-    let data1 = "";
-    completedata.data.map((values) => {
-      data1 += ` <div class="PopularRow">
+setTimeout(() => {
+  rotate.style.display = "none";
+
+  fetch("https://apartment-booking.onrender.com/api/getAllHotel")
+    .then((data) => {
+      return data.json();
+    })
+    .then((completedata) => {
+      let data1 = "";
+      completedata.data.map((values) => {
+        data1 += ` <div class="PopularRow">
     <img class="PopularImg" src="/images/luxury-bedroom-hotel.jpg" alt="">
 <div class="imgDetals">
     <p><b>${values.hotelName}</b></p>
@@ -23,7 +24,8 @@ fetch("https://apartment-booking.onrender.com/api/getAllHotel")
    </div>
 </div>  
 </div>`;
-    });
+      });
 
-    document.querySelector(".RowFlex").innerHTML = data1;
-  });
+      document.querySelector(".RowFlex").innerHTML = data1;
+    });
+}, 2000);
